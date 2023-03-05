@@ -1,7 +1,3 @@
-// Component
-@import url("./components/Navbar.scss");
-// End Component
-
 // Inter
 @import url("./Font.scss");
 
@@ -15,4 +11,9 @@ html,
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
