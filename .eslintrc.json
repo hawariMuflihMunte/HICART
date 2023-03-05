@@ -4,12 +4,26 @@
         "es2021": true,
         "node": true
     },
-    "extends": "xo",
+    "extends": [
+        "plugin:react/recommended",
+        "xo"
+    ],
     "overrides": [
     ],
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
