@@ -1,6 +1,7 @@
 {
   "name": "hicart",
   "version": "1.0.0",
+  "description": "HICART E-Commerce App",
   "private": "false",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,6 +12,21 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawariMuflihMunte/HICART.git"
+  },
+  "keywords": [
+    "hicart",
+    "HICART"
+  ],
+  "author": {
+    "name": "minicode team"
+  },
+  "bugs": {
+    "url": "https://github.com/hawariMuflihMunte/HICART/issues"
+  },
+  "homepage": "https://github.com/hawariMuflihMunte/HICART#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
