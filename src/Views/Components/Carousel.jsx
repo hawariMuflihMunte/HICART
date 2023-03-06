@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 
 import './Carousel.scss';
@@ -47,21 +46,3 @@ function Carousel() {
 }
 
 export default Carousel;
-=======
-import React from 'react';
-
-import './Carousel.scss';
-
-// Assignees:
-// @iqbaalma
-
-function Carousel() {
-	return (
-		<section className='carousel'>
-
-		</section>
-	);
-}
-
-export default Carousel;
->>>>>>> f2bb00dfd149128e004fbad32718d588aaf6ead5
