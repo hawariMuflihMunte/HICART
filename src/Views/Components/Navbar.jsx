@@ -3,11 +3,13 @@ import React from 'react';
 
 import './Navbar.scss';
 
+import Logo from '../../Assets/Logo/Logo - standard.png';
+
 function Navbar() {
 	return (
 		<nav>
 			<a href='#' className='nav-brand'>
-				<img src='https://raw.githubusercontent.com/hawariMuflihMunte/HICART/docs/HICART%20ASSETS/LOGO/logo%20HICART-03.png' alt='HICART' />
+				<img src={Logo} alt='HICART' />
 			</a>
 			<section className='nav-category'>
 				<a href='#'>
