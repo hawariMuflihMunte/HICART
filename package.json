@@ -15,6 +15,7 @@
     "serve": "^14.2.0",
     "stylelint": "^15.2.0",
     "stylelint-scss": "^4.4.0",
+    "vercel": "^28.16.12",
     "web-vitals": "^2.1.4"
   },
   "repository": {
@@ -39,7 +40,8 @@
     "lint": "eslint ./",
     "lint-fix": "eslint --fix ./",
     "stylelint": "npx stylelint \"**/*.scss\"",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "vercel": "vercel --force"
   },
   "eslintConfig": {
     "extends": [
