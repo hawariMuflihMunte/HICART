@@ -2,7 +2,7 @@
 // @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 
 // Inter
-@import url("./Font.scss");
+// @import url("./Font.scss");
 
 // Material Symbols
 @import url("./MaterialSymbols.scss");
@@ -13,6 +13,7 @@
   box-sizing: border-box;
 }
 
+// Install 'Inter' font to project
 html,
 body {
   margin: 0;
