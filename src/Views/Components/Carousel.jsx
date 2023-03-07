@@ -1,3 +1,4 @@
+// Assignees: [iqbal]
 import React from 'react';
 
 import './Carousel.scss';
@@ -21,12 +22,12 @@ function Carousel() {
 				</div>
 				<div className='carousel-item'>
 					<a href='#promo2'>
-						<img src={Caro3} alt='Carousel-2' />
+						<img src={Caro2} alt='Carousel-2' />
 					</a>
 				</div>
 				<div className='carousel-item'>
 					<a href='#promo3'>
-						<img src={Caro2} alt='Carousel-3' />
+						<img src={Caro3} alt='Carousel-3' />
 					</a>
 				</div>
 				<div className='navigation-auto'>
@@ -38,11 +39,19 @@ function Carousel() {
 			<div className='navigation-manual'>
 				<label htmlFor='radio1' className='manual-btn'></label>
 				<label htmlFor='radio2' className='manual-btn'></label>
-				{/* issue radio3 */}
 				<label htmlFor='radio3' className='manual-btn'></label>
 			</div>
 		</section>
 	);
 }
+
+let counter = 1;
+setInterval(() => {
+	document.querySelector('#radio' + counter).checked = true;
+	counter++;
+	if (counter > 3) {
+		counter = 1;
+	}
+}, 3000);
 
 export default Carousel;
