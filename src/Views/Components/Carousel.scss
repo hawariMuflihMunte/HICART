@@ -1,4 +1,4 @@
-// Assignees: @iqbaalma
+// Assignees: [iqbal]
 .carousel {
   width: 1200px;
   height: 400px;
@@ -43,7 +43,6 @@
   justify-content: center;
 
   .manual-btn {
-    background-color: rgb(99, 99, 99);
     padding: 5px;
     width: 20px;
     height: 20px;
@@ -56,5 +55,39 @@
   }
   .manual-btn:hover {
     background-color: rgb(201, 201, 201);
+  }
+}
+.navigation-auto {
+  position: absolute;
+  width: 1200px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+
+  div {
+    background-color: rgb(88, 88, 88);
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  div:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+#radio1:checked ~ .navigation-auto {
+  .navi-btn1 {
+    background: rgb(255, 255, 255);
+  }
+}
+#radio2:checked ~ .navigation-auto {
+  .navi-btn2 {
+    background: rgb(255, 255, 255);
+  }
+}
+#radio3:checked ~ .navigation-auto {
+  .navi-btn3 {
+    background: rgb(255, 255, 255);
   }
 }
