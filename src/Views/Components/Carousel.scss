@@ -1,0 +1,62 @@
+.carousel {
+  width: 1200px;
+  height: 400px;
+  border-radius: 20px;
+  place-items: center;
+  margin: 40px 20px 20px 80px;
+  
+  overflow: hidden;
+}
+.carousel-inner {
+  width: 1200%;
+  height: 400px;
+  display: flex;
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -40px;
+    // issue
+  }
+}
+.carousel-inner input {
+  display: none;
+}
+.carousel-item {
+  width: 20%;
+  transition: 1s;
+
+  img {
+    width: 1200px;
+    height: 400px;
+    cursor: pointer;
+  }
+}
+.navigation-manual {
+  position: absolute;
+  width: 1200px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+
+  .manual-btn {
+    background-color: rgb(99, 99, 99);
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child) {
+    margin-right: 10px;
+  }
+  .manual-btn:hover {
+    background-color: rgb(201, 201, 201);
+  }
+}
+// auto navigation (logic) not ready [iqbal]
