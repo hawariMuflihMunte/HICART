@@ -45,6 +45,7 @@ function Carousel() {
 	);
 }
 
+// Slide auto
 let counter = 1;
 setInterval(() => {
 	document.querySelector('#radio' + counter).checked = true;
