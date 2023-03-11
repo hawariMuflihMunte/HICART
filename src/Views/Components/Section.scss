@@ -1,1 +1,35 @@
-// None
+// Assignees: @hawariMuflihMunte
+
+$color: #555;
+$alpha: 1.0;
+$bg-color: #F5F5F5;
+
+section.item-category {
+    max-width: 1200px;
+    width: 1200px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    
+    display: flex;
+    padding: 20px;
+    background-color: $bg-color;
+    box-shadow: 0 2px 1px rgba($color, $alpha);
+
+    .item-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-display {
+        display: flex;
+        
+
+        img {
+            max-width: 100%;
+            height: 200px;
+        }
+    }
+}
