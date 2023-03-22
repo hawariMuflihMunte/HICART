@@ -1,40 +1,167 @@
 // Assignees: @iqbaalma
+$font-price: 15px;
+$font-discount: 10px;
+$font-status: 10px;
+$font-medium-size: 500;
+
 .flash-sale {
   width: 1200px;
   height: 382px;
-  border: 1px solid black;
   border-radius: 20px;
+  display: grid;
   place-items: center;
-  margin: 40px 20px 20px 80px;
+  place-content: start;
+  border: 1px solid #cccccc;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+  margin: 40px auto 20px auto;
   overflow: hidden;
-  padding: 0 40px;
 
+  .flash-sale-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 0 40px;
+  }
   .flash-sale-content {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .flash-time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+
+  }
+  .time {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 20px;
+    font-size: 35px;
+    gap: 5px;
+
+    @mixin background-time {
+      font-size: 25px;
+      background-color: black;
+      border-radius: 5px;
+      color: white;
+      padding: 5px
+    }
+    .hh {
+      @include background-time;
+    }
+    .mm {
+      @include background-time;
+    }
+    .ss {
+      @include background-time;
+    }
   }
   .promo-kilat {
     font-size: 38px;
-    font-weight: 500;
+    font-weight: $font-medium-size;
+    margin: 0;
   }
-  .content-card{
+  .content-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 
-    .card-flash-sale{
-      background-color: black;
-      color: white;
+    .card-flash-sale {
+      width: 165px;
+      max-height: 237px;
+      color: rgb(0, 0, 0);
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       flex-direction: column;
-
-    p{
-      text-align: start;
+      padding: 10px;
     }
+    .image-flash-sale {
+      border: none;
+      border-radius: 10px;
+      width: 144px;
+      height: 139px;
+    }
+    .price {
+      padding-top: 10px;
+      font-size: $font-price;
+      font-weight: $font-medium-size;
+    }
+    .percent {
+      font-size: smaller;
+      padding: 3px;
+      border-radius: 5px;
+      background-color: #F89B9B;
+      margin-left: 5px;
+    }
+    .discount {
+      font-size: $font-discount;
+      font-weight: $font-medium-size;
+      text-decoration: line-through;
+    }
+    .status {
+      font-size: $font-status;
+      font-weight: $font-medium-size;
+    }
+    .card-flash-sale-1 {
+      @extend .card-flash-sale;
+    }
+    .card-flash-sale-2 {
+      @extend .card-flash-sale;
+    }
+    .card-flash-sale-3 {
+      @extend .card-flash-sale;
+    }
+    .card-flash-sale-4 {
+      @extend .card-flash-sale;
+    }
+    .card-flash-sale-5 {
+      @extend .card-flash-sale;
+    }
+    .card-flash-sale-6 {
+      @extend .card-flash-sale;
+    }
+    .card-flash-sale-7 {
+      @extend .card-flash-sale;
     }
   }
+}
+.progress-bar {
+  background: #DEE2E3;
+  border-radius: 99px;
+  width: 135px;
+  height: 5px;
+  position: relative;
+  overflow: hidden;
+  top: 8px;
+  
+  &::before {
+    border-radius: 99px;
+    position: absolute;
+    height: 5px;
+    background: #F89B9B;
+    content: '';
+    width: 0;
+  }
+}
+
+$start: 1;
+$end: 100;
+
+@for $i from $start through $end {
+  $i: 1 * $i;
+  .progress-bar-#{$i}::before { width: $i * 1% }
 }
