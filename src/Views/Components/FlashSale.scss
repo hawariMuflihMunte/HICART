@@ -1,0 +1,40 @@
+// Assignees: @iqbaalma
+.flash-sale {
+  width: 1200px;
+  height: 382px;
+  border: 1px solid black;
+  border-radius: 20px;
+  place-items: center;
+  margin: 40px 20px 20px 80px;
+  overflow: hidden;
+  padding: 0 40px;
+
+  .flash-sale-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .promo-kilat {
+    font-size: 38px;
+    font-weight: 500;
+  }
+  .content-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .card-flash-sale{
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    p{
+      text-align: start;
+    }
+    }
+  }
+}
